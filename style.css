@@ -1,3 +1,4 @@
+/* Variables */
 :root {
     --hot-color: rgb(254, 149, 188);
     --dark-color: rgb(84, 70, 181);
@@ -7,6 +8,9 @@
     --main-font-family: 'Lato', sans-serif;
     --special-light--font: 'Roboto', sans-serif;
 }
+
+/* ------------------- STYLES OF MAIN CONTAINERS ----------------------- */
+
 
 * {
     margin: 0;
