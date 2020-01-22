@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(254, 149, 188);
+    overflow: hidden;
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.container .conversations{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(84, 70, 181);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.container .conversations_header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.container .conversations_header .menu{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .conversations_header .menu img
+{
+    height: 20%;
+}
+
+.container .conversations_header .proporties{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container .conversations_header .proporties img{
+    height: 20%;
+    margin-right: 8%;
+}
+
+.container .conversations_body{
+    width: 100%;
+    height: 70%;
+}
+
+.container .conversations_body .new_conversation_button_div{
+    width: 80%;
+    height: 10%;
+    margin: auto;
+
+}
+
+.container .conversations_body .new_conversation_button_div form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container .conversations_body .new_conversation_button_div form input{
+    width: 3%;
+    margin-left: 4%;
+}
+
+.container .conversations_body .new_conversation_button_div form label{
+    font-size: 10px;
+    margin-left: 2%;
+}
+
+.container .conversations_body .all_conversations_div{
+    height: 90%;
+    width: 100%;
+    padding: 10px 0;
+    overflow-y: auto;
+}
+
+.container .conversations_body .all_conversations_div .conversation_div{
+    width: 80%;
+    height: 64px;
+    margin: auto;
+    display: flex;
+    padding: 4px;
+}
+
+.container .conversations_body .all_conversations_div .conversation_div .avatar,
+.container .conversations_body .all_conversations_div .conversation_div .conversation_date{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .conversations_body .all_conversations_div .conversation_div .conversation_name{
+    height: 100%;
+    width: 60%;
+    padding-top: 4%;
+    padding-left: 4%;
+    letter-spacing: 1.5px;
+    overflow: hidden;
+
+
+}
+
+.container .conversations_body .all_conversations_div .conversation_div .conversation_name .name{
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+.container .conversations_body .all_conversations_div .conversation_div .conversation_name .message{
+    font-weight: lighter;
+    font-size: x-small;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 3%;
+}
+
+.container .conversations_body .all_conversations_div .conversation_div .avatar img{
+    height: 70%;
+    border-radius: 50%;
+}
+.container .conversations_body .all_conversations_div .conversation_div .conversation_date{
+    align-items: flex-start;
+    letter-spacing: 2px;
+
+}
+
+.container .conversations_body .all_conversations_div .conversation_div .conversation_date p{
+    font-weight: lighter;
+    font-size: x-small;
+    margin-top: 18%;
+    font-family: 'Roboto', sans-serif;
+}
+.container .message_div{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+
+.container .message_div .person_header,
+.container .message_div .new_message
+{
+    width: 100%;
+    height: 15%;
+    color: rgb(84, 70, 181);
+    display: flex;
+    
+}
+
+.container .message_div .person_header .chat_names{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .message_div .person_header .chat_names h3{
+    font-size: smaller;
+    font-family: 'Lato', sans-serif;
+    margin-left: 5%;
+}
+
+.container .message_div .person_header .chat_avatar_block{
+    display: flex;
+    width: 20%;
+    height: 100%;
+}
+
+.container .message_div .person_header .chat_avatar_block .chat_avatars{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .message_div .person_header .chat_avatar_block .chat_avatars:nth-child(1)::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    position: relative;
+    top: -12%;
+    left: 10%;
+  
+
+}
+
+.container .message_div .person_header .chat_avatar_block .chat_avatars img{
+    height: 30%;
+    border-radius: 50%;
+}
+
+.container .message_div .person_header .chat_avatar_block .chat_avatars img:nth-child(2){
+    position: relative;
+    left: -5px;
+}
+
+.container .message_div .person_header .chat_avatar_block .messages_count{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .message_div .person_header .chat_avatar_block .messages_count p{
+   border: 2px solid rgb(84, 70, 181);
+   display: inline;
+   border-radius: 50%;
+   padding: 3px;
+   font-size: xx-small;
+   font-family: 'Lato', sans-serif;
+}
+
+.container .message_div .messages{
+    width: 100%;
+    height: 70%;
+    overflow-y: auto;   
+}
+
+.container .message_div .messages .message_block
+{
+    width: 90%;
+    margin: auto;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container .message_div .messages .message_block:nth-child(even){
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+.container .message_div .messages .message_block .avatar
+{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .message_div .messages .message_block .avatar img
+{
+    width: 60%;
+    border-radius: 50%;
+}
+
+.container .message_div .messages .message_block .message
+{
+    background-color: rgb(179, 167, 253);
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: small;
+    border-radius: 20px;
+    color: white;
+}
+
+.container .message_div .messages .message_block:nth-child(even) .message{
+    background-color: rgb(232, 228, 254);
+    color: rgb(84, 70, 181);
+}
+
+hr{
+    margin: auto;
+    border-top: 1px solid lightsteelblue;
+}
+
+.container .message_div .new_message form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.container .message_div .new_message form input:nth-child(1){
+    width: 80%;
+    height: 100%;
+    padding: 10px 50px;
+    font-size: small;
+    color: rgb(84, 70, 181);
+
+}
+
+.container .message_div .new_message form input:nth-child(1)::placeholder{
+    color: rgb(254, 149, 188);
+    text-transform: uppercase;
+}
+
+.container .message_div .new_message form input:nth-child(1):focus{
+    outline: none;
+}
+
+.container .message_div .new_message form label:nth-child(2){
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .message_div .new_message form input:nth-child(3){
+    display: none;
+
+}
+
+.container .message_div .new_message form label img
+{
+    width: 20%;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
